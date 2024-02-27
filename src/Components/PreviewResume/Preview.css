@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+   display: flex;
+   height: 100vh;
+}
+
+.dataForm{
+    width: 50%;
+    /* background-color: yellow; */
+}
+
+.container{
+    width: 50%;
+    /* background-color: brown; */
+}
+
+.leftView{
+   display: flex;
+   flex-direction: column;
+}
+
+.profileImg{
+
+}
+
+.hisInfo{
+
+}
+
+.contacts{
+   display: flex;
+   flex-direction: column;
+   row-gap: 10px;
+}
+
+.contact_heading{
+
+}
+
+.education{
+
+}
+
+.skill{
+
+}
+
+.rightView{
+
+}
+
+.aboutMe{
+
+}

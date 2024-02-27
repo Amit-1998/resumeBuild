@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+
+}
+
+.content{
+   
+}
+
+.getbtn{
+    background: lightblue;
+    color: white;
+    outline: none !important;
+    border: none;
+}
+
+.resumeImage{
+    margin-top: 20px;
+    width: 40rem;
+    border-radius: 30px;
+}
+

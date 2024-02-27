@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+.loginContainer{
+    padding: 10px 20px;
+    width: 550px;
+    box-shadow: 3px 3px 5px #535C91; 
+    /* hor vert blur spread  */
+}
+
+.inputEmail{
+    /* background: aqua; */
+    text-align: left;
+}
+
+.inputEmail p, .inputPassword p{
+    margin: 0;
+    /* text-align: left; */
+}
+
+.inputEmail input, .inputPassword input{
+   width: 100%;
+   padding: 5px;
+   outline: none;
+   border: none;
+   background: lightblue;
+   border-radius: 5px;
+}
+
+.inputPassword{
+    text-align: left;
+}
+
+.loginBtn{
+    color: white;
+    background: skyblue;
+    margin: 20px 0;
+}
