@@ -1,0 +1,69 @@
+.achievementHeading {
+  position: relative;
+  left: 15px;
+  top: 12px;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 2px;
+  background: white;
+}
+
+.achievementDetails {
+  padding: 14px 14px 28px;
+  border: 2px solid grey;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.addMoreExp {
+  position: relative;
+  background: white;
+  bottom: 21px;
+  left: 230px;
+  cursor: pointer;
+}
+
+.inputContainer{
+  display: flex;
+  border: 1px solid #B5C0D0;
+  border-radius: 8px;
+  padding: 10px;
+  row-gap: 5px;
+  // overflow: scroll;
+  flex-wrap: wrap;
+  // color: black;
+}
+
+.tag{
+  border: 1px solid orange;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin-right: 5px;
+  column-gap: 8px;
+  justify-content: space-between;
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.tag button{
+  display: flex;
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+  color: white;
+}
+
+.inputAchieve{
+  // overflow-wrap: break-word;
+  border: none;
+  outline: none;
+  background: #B5C0D0;
+  border-radius: 8px;
+  padding: 14px;
+  width: 100%;
+}

@@ -1,0 +1,14 @@
+.tagContainer{
+    background: #CCD3CA;
+    border-radius: 10px;
+    display: flex;
+    column-gap: 5px;
+    width: fit-content;
+    // height: fit-content;
+    padding: 5px 10px;
+}
+
+.tagContainer img{
+     height: 20px;
+     width: 20px;
+}

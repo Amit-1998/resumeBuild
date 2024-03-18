@@ -1,0 +1,46 @@
+.expHeading {
+  position: relative;
+  left: 15px;
+  top: 12px;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 2px;
+  background: white;
+}
+
+.experienceDetails {
+  padding: 14px 14px 28px;
+  border: 2px solid grey;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.exp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 8px;
+  column-gap: 8px;
+}
+
+.exp input,
+textarea {
+  outline: none;
+  border: none;
+  background: #dfe4ea;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+textarea {
+  grid-column: span 2; /* span across 2 columns */
+}
+
+.addMoreExp {
+  position: relative;
+  background: white;
+  bottom: 21px;
+  left: 230px;
+  cursor: pointer;
+}

@@ -1,59 +1,132 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.parent{
-   display: flex;
-   height: 100vh;
+.parent {
+  display: flex;
+  height: 100vh;
 }
 
-.dataForm{
-    width: 50%;
-    /* background-color: yellow; */
+.dataForm {
+  width: 40%;
+  padding: 20px;
+  overflow-y: scroll;
+  /* background-color: yellow; */
 }
 
-.container{
-    width: 50%;
-    /* background-color: brown; */
+.dataForm::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
 }
 
-.leftView{
-   display: flex;
-   flex-direction: column;
+.container {
+  width: 60%;
+  display: flex;
+  /* background-color: brown; */
 }
 
-.profileImg{
-
+.leftView {
+  /* width: 30%; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  padding: 17px 20px;
+  background: #dcdde1;
 }
 
-.hisInfo{
+/* .profileImg{
+    align-self: center;
+} */
 
+.profile {
+  align-self: center;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  /* margin-top: 15px; */
 }
 
-.contacts{
-   display: flex;
-   flex-direction: column;
-   row-gap: 10px;
+/* .profileImg img{
+    border-radius: 50%;
+} */
+
+.hisInfo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
-.contact_heading{
-
+.contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 
-.education{
-
+.contact_heading {
 }
 
-.skill{
-
+.contactDet {
+  display: flex;
+  column-gap: 17px;
 }
 
-.rightView{
-
+.education {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 
-.aboutMe{
+.education_Heading {
+}
 
+.educationDetails {
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.aboutSkill {
+  display: flex;
+  justify-content: space-between;
+  /* column-gap: 20px; */
+}
+
+.rating {
+  /* align-self: flex-end; */
+}
+
+.rightView {
+  padding: 17px;
+  /* width: 70%; */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  row-gap: 39px;
+}
+
+.aboutMe {
+}
+
+.aboutMe p {
+  margin-top: 20px;
+}
+
+.Company {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-top: 10px;
+}
+
+.compDetails {
+}
+
+.nameDuration {
+  display: flex;
+  justify-content: space-between;
 }

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.details{
+   padding: 14px;
+   border: 2px solid grey;
+   border-radius: 8px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   row-gap: 5px;
+}
+
+.nameInput{
+
+}
+
+.details input{
+    outline: none;
+    border: none;
+    background: #dfe4ea;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.personalDetailHeading{
+    position: relative;
+    left: 15px;
+    top: 12px;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 2px;
+    background: white;
+}

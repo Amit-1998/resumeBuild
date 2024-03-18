@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+.educationDetailHeading {
+  position: relative;
+  left: 15px;
+  top: 12px;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 2px;
+  background: white;
+}
+
+.addMoreIcon {
+  position: relative;
+  background: white;
+  bottom: 21px;
+  left: 230px;
+  cursor: pointer;
+}
+
+.eduDetails {
+  padding: 14px;
+  border: 2px solid grey;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 5px;
+}
+
+.eduDetails input{
+  outline: none;
+  border: none;
+  background: #dfe4ea;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+// .educationDetailHeading{
+//   position: relative;
+//   left: 15px;
+//   top: 12px;
+//   width: fit-content;
+//   border-radius: 5px;
+//   padding: 2px;
+//   background: white;
+// }

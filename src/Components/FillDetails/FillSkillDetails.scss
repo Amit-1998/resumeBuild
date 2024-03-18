@@ -1,0 +1,42 @@
+.skillContainer {
+}
+
+.skillHeading {
+  position: relative;
+  left: 15px;
+  top: 12px;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 2px;
+  background: white;
+}
+
+.skillDetails {
+  padding: 14px 14px 28px;
+  border: 2px solid grey;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.skill {
+  display: flex;
+  column-gap: 10px;
+}
+
+.skill input {
+  outline: none;
+  border: none;
+  background: #dfe4ea;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.addMoreSkill {
+  position: relative;
+  background: white;
+  bottom: 21px;
+  left: 230px;
+  cursor: pointer;
+}

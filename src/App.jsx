@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import GetStartedForFree from "./Components/GetStarted/GetStartedForFree";
 // import SelectResumeTemp from "./Components/SelectResumeTemplate/SelectResumeTemp";
 import Preview from "./Components/PreviewResume/Preview";
-
+// import RatingStar from "./Components/RatingStar/RatingStar";
 
 function App() {
 
@@ -15,6 +15,7 @@ function App() {
          {/* <Route path={'/'} element={<GetStartedForFree />} /> */}
          {/* <Route path={'/'} element={<SelectResumeTemp />} /> */}
          <Route path={'/'} element={<Preview />} />
+         {/* <Route path={'/'} element={<RatingStar />} /> */}
       </Routes>
     </Router>
   )
