@@ -1,5 +1,6 @@
 import { useState } from "react";
 import AddMoreIcon from "../../assets/AddMore.svg";
+import MinusIcon from "../../assets/minus.svg";
 import "./FillWorkExp.scss";
 
 const FillWorkExp = () => {
@@ -36,12 +37,16 @@ const FillWorkExp = () => {
     ]);
   };
 
+  const handleRemoveExp = (index) => {
+      setExpDetails((prevExp) => prevExp.filter((elem,idx) => idx !== index));
+  }
+
   const renderExperienceUI = (exp, index) => {
     return (
       <>
         {/* {index > 0 ? ( */}
         <>
-          {index > 0 ? <hr /> : ""}
+          {index > 0 ? <><hr /><img className="removeExp" src={MinusIcon} onClick={() => handleRemoveExp(index)} /></> : ""}
           <section className="exp">
             <input
               placeholder="Enter Company Name"

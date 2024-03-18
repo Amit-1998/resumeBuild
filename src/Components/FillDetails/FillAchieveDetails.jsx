@@ -1,5 +1,4 @@
 import { useState } from "react";
-import AddMoreIcon from "../../assets/AddMore.svg";
 import "./FillAchieveDetails.scss";
 import TagFilled from "../FilledTags/TagFilled";
 
@@ -19,50 +18,39 @@ const FillAchieveDetails = () => {
 
   const hitTheEnter = (e) => {
     if (e.code === "Enter") {
-      console.log('Enter pressed', e);
+      console.log("Enter pressed", e);
       // setDisplayTag(true);
-      console.log('tags inside Enter hit => ', tags);
+      console.log("tags inside Enter hit => ", tags);
       const trimmedInput = textInput.trim();
-      if(trimmedInput.length > 0 && !tags.includes(trimmedInput)){
+      if (trimmedInput.length > 0 && !tags.includes(trimmedInput)) {
         setTags((prevTags) => [...prevTags, trimmedInput]);
-        setTextInput('');
+        setTextInput("");
       }
     }
   };
-  
+
   const deleteTag = (index) => {
-      setTags((prevtags) => prevtags.filter((tag, idx) => idx!==index));
-  }
+    setTags((prevtags) => prevtags.filter((tag, idx) => idx !== index));
+  };
 
   const renderAchieveUI = (item, index) => {
-    console.log('tags => ', tags);
+    console.log("tags => ", tags);
     return (
-      <div className="inputContainer">
-        {/* <textarea
-          rows="4"
-          placeholder="Your Achievements !"
-          onKeyPress={(e) => hitTheEnter(e)}
-          onChange={(e) => {
-            handleChangeTextArea(e);
-          }}
-        >
-          {displayTag && <TagFilled displayText={textInput} />}
-        </textarea> */}
-
-        {tags.map((tag, index) => (
-          <div className="tag">
-            {tag}
-            <button onClick={() => deleteTag(index)}>x</button>
-          </div>
-        ))}
-        <input
-          className="inputAchieve"
-          value={textInput}
-          placeholder="Your Achievements !"
-          onKeyPress={(e) => hitTheEnter(e)}
-          onChange={handleOnChange}
-        />
-      </div>
+        <div className="inputContainer">
+          {tags.map((tag, index) => (
+            <div className="tag">
+              {tag}
+              <button onClick={() => deleteTag(index)}>x</button>
+            </div>
+          ))}
+          <input
+            className="inputAchieve"
+            value={textInput}
+            placeholder="Your Achievements !"
+            onKeyPress={(e) => hitTheEnter(e)}
+            onChange={handleOnChange}
+          />
+        </div>
     );
   };
 
@@ -80,10 +68,10 @@ const FillAchieveDetails = () => {
       <div className="achieveContainer">
         <h3 className="achievementHeading">Achievements</h3>
         <div className="achievementDetails">
-          {achieveDetails.map((item, index) => renderAchieveUI(item, index))}
+          {achieveDetails.map((item, index) => renderAchieveUI(item, index)
+          )}
         </div>
       </div>
-      <img src={AddMoreIcon} className="addMoreExp" onClick={handleAddMore} />
     </>
   );
 };
