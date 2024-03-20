@@ -46,16 +46,18 @@ const FillWorkExp = () => {
       <>
         {/* {index > 0 ? ( */}
         <>
-          {index > 0 ? <><hr /><img className="removeExp" src={MinusIcon} onClick={() => handleRemoveExp(index)} /></> : ""}
+          {/* {index > 0 ? <><hr /><img className="removeExp" src={MinusIcon} onClick={() => handleRemoveExp(index)} /></> : ""} */}
           <section className="exp">
             <input
               placeholder="Enter Company Name"
               type="text"
+              value={exp.company}
               onChange={(e) => handleInputChange(e, index, "company")}
             />
             <input
               placeholder="Designation"
               type="text"
+              value={exp.designation}
               onChange={(e) => handleInputChange(e, index, "designation")}
             />
             <textarea
@@ -66,6 +68,7 @@ const FillWorkExp = () => {
               <p>Start Date</p>
               <input
                 type="date"
+                value={exp.startDate}
                 onChange={(e) => handleInputChange(e, index, "startDate")}
               />
             </section>
@@ -74,6 +77,7 @@ const FillWorkExp = () => {
               <input
                 type="checkbox"
                 style={{ cursor: "pointer" }}
+                value={exp.currWorking}
                 onChange={(e) => handleInputChange(e, index, "currWorking")}
               />
               <span style={{ marginLeft: "5px" }}>Currently Working</span>
@@ -84,11 +88,14 @@ const FillWorkExp = () => {
                 <p>End Date</p>
                 <input
                   type="date"
+                  value={exp.endDate}
                   onChange={(e) => handleInputChange(e, index, "endDate")}
                 />
               </section>
             )}
           </section>
+          {index > 0 ? 
+          <img src={MinusIcon} className="removeExp" onClick={() => handleRemoveExp(index)}/> : ''}
         </>
       </>
     );

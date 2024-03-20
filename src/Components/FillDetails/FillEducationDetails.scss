@@ -20,9 +20,18 @@
   cursor: pointer;
 }
 
-.eduDetails {
-  padding: 14px;
+.edDetails{
   border: 2px solid grey;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.eduDetails {
+  border: 1px solid #B5C0D0;
+  padding: 14px;
   border-radius: 8px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -37,6 +46,15 @@
   padding: 5px;
 }
 
+.removeEdu{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  bottom: 30px;
+  left: 218px;
+  cursor: pointer;
+  background: white;
+}
 // .educationDetailHeading{
 //   position: relative;
 //   left: 15px;

@@ -23,6 +23,9 @@
 .skill {
   display: flex;
   column-gap: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px 10px 20px;
 }
 
 .skill input {
@@ -39,4 +42,14 @@
   bottom: 21px;
   left: 230px;
   cursor: pointer;
+}
+
+.removeSkill{
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: white;
+  position: relative;
+  bottom: 30px;
+  left: 214px;
 }
