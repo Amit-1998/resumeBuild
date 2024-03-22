@@ -48,7 +48,7 @@ const FillAchieveDetails = () => {
             value={textInput}
             placeholder="Your Achievements !"
             onKeyPress={(e) => hitTheEnter(e)}
-            value={item.achieve}
+            // value={item.achieve}
             onChange={handleOnChange}
           />
         </div>

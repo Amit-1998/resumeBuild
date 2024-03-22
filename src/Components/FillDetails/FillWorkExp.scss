@@ -57,3 +57,44 @@ textarea {
   background: white;
   cursor: pointer;
 }
+
+.expDiv{
+  display: flex;
+  border-radius: 8px;
+  // padding: 10px;
+  row-gap: 5px;
+  flex-wrap: wrap;
+  grid-column: span 2;
+}
+
+.tagDiv {
+  border: 1px solid orange;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin-right: 5px;
+  column-gap: 8px;
+  justify-content: space-between;
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  // white-space: nowrap;
+}
+
+.tagDiv button{
+  display: flex;
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+  color: white;
+}
+
+.inputExp{
+  // overflow-wrap: break-word;
+  border: none;
+  outline: none;
+  background: #B5C0D0;
+  border-radius: 8px;
+  padding: 12px !important;
+  width: 100%;
+}
