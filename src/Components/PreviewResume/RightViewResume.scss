@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .parent {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .dataForm {
+    width: 40%;
+    padding: 20px;
+    overflow-y: scroll;
+    /* background-color: yellow; */
+  }
+  
+  .dataForm::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+  }
+  
+  .container {
+    width: 60%;
+    display: flex;
+    /* background-color: brown; */
+  }
+  
+  .leftView {
+    /* width: 30%; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding: 17px 20px;
+    background: #dcdde1;
+  }
+  
+  /* .profileImg{
+      align-self: center;
+  } */
+  
+  .profile {
+    align-self: center;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    /* margin-top: 15px; */
+  }
+  
+  /* .profileImg img{
+      border-radius: 50%;
+  } */
+  
+  .hisInfo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  
+  .contact_heading {
+  }
+  
+  .contactDet {
+    display: flex;
+    column-gap: 17px;
+  }
+  
+  .education {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  
+  .education_Heading {
+  }
+  
+  .educationDetails {
+  }
+  
+  .skills {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  
+  .aboutSkill {
+    display: flex;
+    justify-content: space-between;
+    /* column-gap: 20px; */
+  }
+  
+  .rating {
+    /* align-self: flex-end; */
+  }
+  
+  .rightView {
+    padding: 17px;
+    /* width: 70%; */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    row-gap: 39px;
+  }
+  
+  .aboutMe {
+  }
+  
+  .aboutMe p {
+    margin-top: 20px;
+  }
+  
+  .Company {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    margin-top: 10px;
+  }
+  
+  .compDetails {
+  }
+  
+  .nameDuration {
+    display: flex;
+    justify-content: space-between;
+  }
+  

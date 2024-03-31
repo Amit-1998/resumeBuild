@@ -9,6 +9,7 @@ const FillEducationDetails = () => {
       degree: "",
       university: "",
       year: "",
+      marks: ""
     },
   ]);
 
@@ -53,6 +54,15 @@ const FillEducationDetails = () => {
               onChange={(e) => handleInputChange(e, index, "year")}
             />
           </section>
+          <section className="cgpa">
+            <p>CGPA | %</p>
+            <input
+              placeholder="Enter CGPA or %"
+              type="text"
+              value={educationDetails[index].marks}
+              onChange={(e) => handleInputChange(e, index, "marks")}
+            />
+          </section>
         </div>
         {index > 0 ? 
           <img src={MinusIcon} className="removeEdu" onClick={() => handleRemoveEdu(index)}/> : ''}
@@ -67,6 +77,7 @@ const FillEducationDetails = () => {
         degree: "",
         university: "",
         year: "",
+        marks: ""
       },
     ]);
   };
